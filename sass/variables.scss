@@ -1,0 +1,13 @@
+@mixin rbtn() {
+  border-radius: 25px;
+  color: #fff;
+  border: 2px solid #fff;
+  padding: 10px;
+  width: 280px;
+  display: block;
+  text-align: center;
+  box-sizing: border-box;
+  font-weight: 700;
+  font-size: 18px;
+  cursor: pointer;
+}

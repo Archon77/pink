@@ -1,0 +1,17 @@
+
+
+.main-menu__link {
+  display: block;
+  
+  background-color: #283645;
+  width: 100%;
+  padding: 20px 80px;
+  box-sizing: border-box;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  box-shadow: inset  0px -1px 0 0px #000000, inset 0px 1px 0 0 rgba(255, 255, 255, 0.15);
+    /*0px 1px 0 2px #000000, inset 0px 1px 0 0 rgba(255, 255, 255, 0.15);*/
+}
