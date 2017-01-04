@@ -1,0 +1,62 @@
+.price {
+  background-color: #f2f2f2;
+  padding: 50px 0;
+  text-transform: uppercase;
+}
+
+.price__header {
+  padding: 0 20px;
+  height: 95px;
+  background-color: #283645;
+  color: #fff;
+  display: flex;
+}
+
+.price__hit {
+  width: 30%;
+  margin: 0;
+  position: relative;
+  & span {
+    top: 7px;
+    left: 10px;
+    
+    position: absolute;
+    transform: rotate(-45deg);
+    font-size: 20px;
+    font-weight: 300;
+  }
+}
+
+.price__title {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.price__value {
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.price__package {
+  width: 70%;
+  margin: 0;
+  
+}
+.price__slide {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.price__switch {
+  @include switch();
+}
+
+.price__included {
+  padding: 15px 20px;
+  display: flex;
+  border-bottom: 2px solid #e5e5e5;
+  background-color: #fff;
+  & svg {
+    margin-left: auto;
+  }
+}

@@ -37,6 +37,16 @@
         <path id="path5064" fill="#F9BC15" d="M43.922,41.992H23.049V22.04h20.873V41.992z"/>
       </g>
     </symbol>
+    <symbol id="yes" viewBox="-82.357 4.875 21.698 16.09">
+      <path  fill="#62d167" d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
+    </symbol>
+    <symbol id="no" viewBox="0 0 26.752 26.752">
+      <path fill="#f25b26" d="M15.497,13.376L26.312,2.562c0.586-0.585,0.586-1.535,0-2.121s-1.535-0.586-2.121,0L13.376,11.255L2.562,0.439 c-0.586-0.586-1.535-0.586-2.121,0c-0.586,0.585-0.586,1.535,0,2.121l10.814,10.815L0.439,24.19c-0.586,0.586-0.586,1.535,0,2.121 c0.293,0.293,0.677,0.439,1.061,0.439s0.768-0.146,1.061-0.439l10.815-10.814L24.19,26.312c0.293,0.293,0.677,0.439,1.061,0.439 s0.768-0.146,1.061-0.439c0.586-0.586,0.586-1.535,0-2.121L15.497,13.376z"/>
+    </symbol>
+    <symbol id="hit" viewBox="0 0 74 73">
+      <polygon fill="#D22856" points="31,0 0,30.581 0,73 74,0 "/>
+    </symbol>
+
   </svg>
   <div class="container">
     <header class="page-header">
@@ -97,24 +107,45 @@
       <div class="recall">
         <h3 class="recall__title">Николай Петров</h3>
         <p class="recall__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-        <div class="recall__slide">. . .</div>
+        <div class="recall__slide">
+          <input class="recall__switch" type="radio" id="recall__switch_1" name="recall" checked>
+          <label for="recall__switch_1"></label>
+          <input class="recall__switch" type="radio" id="recall__switch_2" name="recall">
+          <label for="recall__switch_2"></label>
+          <input class="recall__switch" type="radio" id="recall__switch_3" name="recall">
+          <label for="recall__switch_3"></label>
+        </div>
       </div>
       <div class="price">
         <div class="price__header">
-          <h3 class="price__title"></h3>
-          <span class="price__value"></span>
+          <div class="price__hit">
+            <svg width="70px" height="65px"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#hit"></use></svg>
+            <span>Хит</span>
+          </div>
+          <div class="price__package">
+            <h3 class="price__title">Стандарт</h3>
+            <span class="price__value">3,99 usd</span>
+          </div>  
         </div>
         <div class="price__included">
-          <p class="price__text"></p>
-          <!-- svg -->
+          <p class="price__text">Розовый фильтр</p>
+          <svg width="25px" height="20px"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#yes"></use></svg>
         </div>
         <div class="price__included">
-          <p class="price__text"></p>
-          <!-- svg -->
+          <p class="price__text">Смайлики</p>
+          <svg width="25px" height="20px"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#yes"></use></svg>
         </div>
         <div class="price__included">
-          <p class="price__text"></p>
-          <!-- svg -->
+          <p class="price__text">Комментарии</p>
+          <svg width="25px" height="27px"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#no"></use></svg>
+        </div>
+        <div class="price__slide">
+          <input class="price__switch" type="radio" id="price__switch_1" name="price">
+          <label for="price__switch_1"></label>
+          <input class="price__switch" type="radio" id="price__switch_2" name="price" checked>
+          <label for="price__switch_2"></label>
+          <input class="price__switch" type="radio" id="price__switch_3" name="price">
+          <label for="price__switch_3"></label>
         </div>
       </div>
       <div class="feedback">
@@ -136,9 +167,10 @@
         <!-- iframe яндекс карты -->
       </div>
     </main>
+    <!--
     <footer class="page-footer">
       <div class="footer__logo">
-        <!-- svg -->
+        
       </div>
       <div class="social">
         <div class="social__link"></div>
@@ -147,9 +179,10 @@
       </div>
       <div class="footer__logo-academy">
         Разработано
-        <!-- svg -->
+       
       </div>
     </footer>
+    -->
   </div>
   </body>
 </html>

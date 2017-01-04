@@ -1,0 +1,67 @@
+.recall {
+  padding: 20px;
+  text-align: center;
+}
+
+.recall__title {
+  margin-top: 15px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.recall__text {
+  margin-top: 15px;
+  fint-size: 14px;
+  font-weight: 400;
+}
+
+.recall__slide {
+  margin-top: 15px;
+}
+
+.recall__switch {
+  @include switch();
+}
+
+/*
+.switch {
+  width: 17px;
+  height: 17px;
+  margin: 0 3px 0 0;
+  & + label {
+    cursor: pointer;
+  }
+  &:not(checked) {
+    position: absolute;
+    opacity: 0;
+  }
+  &:not(checked) + label {
+    position: relative;
+    padding: 0 0 0 20px;
+  }
+  &:not(checked) + label:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #bec2c7;
+  }
+  &:not(checked) + label:after {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    width: 6px;
+    height: 6px;
+    border: 3px solid black;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: 0;
+  }
+  &:checked + label:after {
+    opacity: 1;
+  }
+}*/
