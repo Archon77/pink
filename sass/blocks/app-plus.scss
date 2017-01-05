@@ -24,6 +24,12 @@
   overflow: hidden;
 }
 
+.app-plus__img-item {
+  &:not(:last-of-type) {
+    display: none;
+  }
+}
+
 @media (min-width: 700px) {
   .app-plus {
     display: flex;
@@ -39,7 +45,31 @@
   }
   .app-plus__img {
     order: -1;
+    
     width: 50%;
     height: 481px;
+  }
+}
+
+
+  
+@media (min-width: 1200px) {
+  .app-plus {
+    flex-wrap: wrap;
+  }
+  .app-plus__img {
+    width: 100%;
+    height: 311px;
+    display: flex;
+  }
+  .app-plus__img-item {
+    width: 33%;
+    &:not(:last-of-type) {
+      display: block;
+    }
+  }
+  .app-plus__group {
+    display: flex;
+    width: 100%;
   }
 }

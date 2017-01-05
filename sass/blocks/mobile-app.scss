@@ -59,3 +59,9 @@
     line-height: 24px;
   }
 }
+
+@media (min-width: 1200px) {
+  .mobile-app {
+    top: -848px;
+  }
+}

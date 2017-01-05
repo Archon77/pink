@@ -20,3 +20,20 @@
     height: 40px;
   } 
 }
+
+@media (min-width: 1200px) {
+  .logo {
+    position: absolute;
+    background-color: transparent;
+    width: 30%;
+    z-index: 1;
+    
+    &:after {
+      display: none;
+    }
+    
+  }
+  .logo__img {
+    fill: #fff;
+  }
+}

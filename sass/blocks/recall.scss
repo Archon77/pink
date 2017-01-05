@@ -14,7 +14,7 @@
 
 .recall__text {
   margin-top: 15px;
-  fint-size: 14px;
+  font-size: 14px;
   font-weight: 400;
 }
 
@@ -43,4 +43,49 @@
     display: block;
     font-size: 14px;
   }
+}
+
+@media (min-width: 1200px) {
+  .recall {
+  position: relative;
+  padding: 100px 130px 50px;
+    &:before {
+      content: "";
+      position: absolute;
+      top: 113px;
+      left: 130px;
+      width: 22px;
+      height: 41px;
+      background-image: url(../img/icon/icon-review-arrow-left.svg);
+      cursor: pointer;
+    }
+    &:after {
+      content: "";
+      position: absolute;
+      top: 113px;
+      right: 130px;
+      width: 22px;
+      height: 41px;
+      background-image: url(../img/icon/icon-review-arrow-right.svg);
+      cursor: pointer;
+    }
+  }
+  
+  .recall__slide {
+    display: none;
+  }
+  .recall__text { 
+    margin: 15px 110px 0; 
+    font-size: 18px;
+    &:before {
+      content: "";
+      position: absolute;
+      top: -20px;
+      left: 47%;
+      width: 79px;
+      height: 63px;
+      background-image: url(../img/icon/icon-quotes.svg);
+    }
+  }
+  
 }

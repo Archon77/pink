@@ -12,5 +12,25 @@
   font-weight: 700;
   color: #fff;
   box-shadow: inset  0px -1px 0 0px #000000, inset 0px 1px 0 0 rgba(255, 255, 255, 0.15);
-    /*0px 1px 0 2px #000000, inset 0px 1px 0 0 rgba(255, 255, 255, 0.15);*/
+}
+
+@media (min-width: 1200px) {
+  .main-menu  {
+    position: absolute;
+    width: 1200px;
+    background-color: rgba(255,255,255,0.1);
+    & ul {
+      display: flex;
+      width: 70%;
+      margin-left: 30%;
+    }
+  }
+  .main-menu__link {
+    padding: 30px 0;
+    background-color: transparent;
+    box-shadow: none;
+  }
+  .main-menu__item {
+    width: 25%;
+  }
 }

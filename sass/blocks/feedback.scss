@@ -33,11 +33,27 @@
     flex-wrap: wrap;
   }
   .feedback__title {
-     margin: 0 90px;
-     font-size: 40px;
+    margin: 0 90px;
+    width: 100%;
+    display: block;
+    font-size: 40px;
   }
   .feedback__item {
     width: 50%; 
     margin: 15px auto 0;
   }
 }
+
+@media (min-width: 1200px) {
+  .feedback {
+    padding: 56px 130px 20px; 
+  }
+  .feedback__title {
+    margin: 0 210px;
+  }
+  .feedback__item {
+    width: 33.333%; 
+  }
+}
+
+
