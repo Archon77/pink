@@ -1,10 +1,15 @@
 .mobile-app {
   padding: 25px 20px 15px;
   background-color: #283645;
+  text-align: center;
 }
 
 .mobile-app__download {
   @include rbtn();
+}
+
+.mobile-app__title {
+  display: none;
 }
 
 .mobile-app__logo {
@@ -20,5 +25,37 @@
   font-weight: 300;
   margin-top: 15px;
   color: #fff;
-  text-align: center;
+  
+}
+
+
+
+@media (min-width: 700px) {
+  .mobile-app {
+    background-color: transparent;
+    position: absolute;
+    top: -618px;
+    left: 20px;
+    width: 42.8%;
+    padding: 100px 20px;
+  }
+  .mobile-app__title {
+    margin: 0 57px;
+    font-size: 40px;
+    font-weight: 300;
+    color: #fff;
+    display: block;
+  }
+  .mobile-app__download {
+    margin-top: 39px;
+    
+  }
+  .mobile-app__logo {
+    margin-top: 52px;
+  }
+  .mobile-app__text {
+    margin-top: 44px;
+    font-size: 18px;
+    line-height: 24px;
+  }
 }

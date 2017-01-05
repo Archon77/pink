@@ -5,5 +5,25 @@
 }
 
 .intro img {
-  margin: 109px 10% 0;
+  margin: 81px 0 0;
+  width: 320px;
+  height: 314px;
 }
+
+@media (min-width: 320px) and (min-resolution: 144dpi),
+       (min-width: 320px) and (min-resolution: 1.5dppx) {
+   background-image: url(../img/bg-back-mobile@2x.jpg);
+}
+
+
+@media (min-width: 700px) {
+  .intro {
+    height: 618px;
+    background-image: url(../img/bg-back-tablet@1x.jpg);
+  }
+  .intro img {
+    margin: 73px 0 0;
+    width: 700px;
+    height: 545px;
+  }
+} 

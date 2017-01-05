@@ -1,13 +1,16 @@
 .app-plus {
   text-align: center;
-  padding: 15px 40px 0;
+  padding: 15px 40px 0; /* 15px top */
   background-color: #f2f2f2;
+}
+
+.app-plus__item {
+  margin-top: 15px;
 }
 
 .app-plus__title {
   font-weight: 700;
   font-size: 18px;
-  margin-top: 15px;
 }
 
 .app-plus__text {
@@ -19,4 +22,24 @@
   margin-top: 45px;
   height: 280px;
   overflow: hidden;
+}
+
+@media (min-width: 700px) {
+  .app-plus {
+    display: flex;
+    padding: 15px 40px 0;
+  } 
+  
+  .app-plus__group {
+    width: 50%;
+    padding: 0 50px 45px 42px;
+  }
+  .app-plus__item {
+    margin-top: 45px; 
+  }
+  .app-plus__img {
+    order: -1;
+    width: 50%;
+    height: 481px;
+  }
 }

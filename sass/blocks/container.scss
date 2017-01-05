@@ -4,4 +4,11 @@
   margin: 0 auto;
   /*min-width: 320px;
   max-width: 1200px;*/
+  border: 1px solid black;
+}
+
+@media (min-width: 700px) {
+  .container {
+    width: 700px;
+  }
 }

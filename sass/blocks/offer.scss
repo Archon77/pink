@@ -1,10 +1,23 @@
 .offer {
-  padding: 20px 0;
+  padding: 0 20px;
 }
 
 .offer__title {
-  
+  margin-top: 20px;
   font-size: 24px;
   font-weight: 300;
   text-align: center;
+}
+
+
+@media (min-width: 700px) {
+  .offer {
+    padding: 0 55px 23px;
+  }
+  .offer__title {
+    font-size: 40px;
+    margin-top: 59px;
+  }
+  
+  
 }

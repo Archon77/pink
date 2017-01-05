@@ -1,0 +1,29 @@
+.page-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  &--mobile-main {
+    display: none;
+  }
+}
+
+.footer__logo-academy {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  & svg {
+    margin-left: 10px;
+    fill: #d22856;
+  }
+}
+
+@media (min-width: 700px) {
+  .page-footer {
+  padding: 36px 40px 37px 40px;
+  flex-direction: row;
+    
+  &--mobile-main {
+      display: flex;
+    }
+  }
+}

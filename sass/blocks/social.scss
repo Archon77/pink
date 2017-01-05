@@ -1,0 +1,25 @@
+.social {
+  display: flex;
+}
+
+.social__link {
+  margin-left: 15px;
+  display: flex;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: 3px solid rgba(40,54,69,0.1);
+  border-radius: 50%;
+  &:first-of-type {
+    margin-left: 0;
+  }
+}
+
+
+@media (min-width: 700px) {
+  .social__link {
+    width: 51px;
+    height: 51px;
+  }
+}

@@ -1,17 +1,17 @@
 .feedback {
-  padding: 0 20px;
+  padding: 20px 20px 0;
   text-align: center;
 }
 
 .feedback__title {
-  margin-top: 20px;
   font-size: 24px;
   font-weight: 300;
 }
 
 .feedback__item {
+  margin-top: 15px;
   & b {
-    margin-top: 15px;
+    
     display: block;
     width: 100%;
     font-size: 18px;
@@ -23,4 +23,21 @@
   font-size: 24px;
   font-weight: 300;
   color: #d22856;
+}
+
+
+@media (min-width: 700px) {
+  .feedback {
+    padding: 56px 71px 20px; 
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .feedback__title {
+     margin: 0 90px;
+     font-size: 40px;
+  }
+  .feedback__item {
+    width: 50%; 
+    margin: 15px auto 0;
+  }
 }
