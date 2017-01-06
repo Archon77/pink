@@ -12,7 +12,7 @@
   display: flex;
   align-items: center;
   & svg {
-    margin-left: 10px;
+    margin-left: 14px;
     fill: #d22856;
   }
 }
@@ -25,5 +25,10 @@
   &--mobile-main {
       display: flex;
     }
+  }
+  .footer__logo-academy {
+    font-size: 14px;
+    line-height: 18px;  
+    margin-top: 10px;
   }
 }

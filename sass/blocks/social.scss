@@ -18,8 +18,12 @@
 
 
 @media (min-width: 700px) {
+  .social {
+    margin-left: -16px;
+  }
   .social__link {
     width: 51px;
     height: 51px;
+    margin-left: 14px;
   }
 }

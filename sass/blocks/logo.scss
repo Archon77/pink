@@ -15,9 +15,21 @@
 }
 
 @media (min-width: 700px) {
+  .logo {
+    padding: 26px 40px 38px;
+    &:after {
+      top: 44px;
+      right: 39px;
+    }
+  }
+  
   .logo__img {
     width: 147px;
     height: 40px;
+    & img {
+      width: 147px;
+      height: 40px;  
+    }
   } 
 }
 

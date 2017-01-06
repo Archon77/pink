@@ -1,5 +1,5 @@
 .feedback {
-  padding: 43px 20px 0;
+  padding: 43px 20px 30px;
   text-align: center;
 }
 
@@ -17,7 +17,7 @@
     font-size: 18px;
     font-weight: 700;
   }
-  &:first-of-type {
+  &--first {
     margin-top: 30px;
   }
 }
@@ -31,7 +31,7 @@
 
 @media (min-width: 700px) {
   .feedback {
-    padding: 56px 71px 20px; 
+    padding: 56px 71px 25px; 
     display: flex;
     flex-wrap: wrap;
   }
@@ -43,7 +43,10 @@
   }
   .feedback__item {
     width: 50%; 
-    margin: 15px auto 0;
+    margin: 34px auto 0;
+    &--last{
+      margin-top: 47px;
+    }
   }
 }
 

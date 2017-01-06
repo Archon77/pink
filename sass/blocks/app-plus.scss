@@ -42,16 +42,22 @@
   
   .app-plus__group {
     width: 50%;
-    padding: 0 50px 45px 42px;
+    padding: 82px 0 0 0;
   }
   .app-plus__item {
-    margin-top: 45px; 
+    margin-bottom: 35px; 
+    text-align: left; 
   }
   .app-plus__img {
     order: -1;
     
     width: 50%;
     height: 481px;
+  }
+  .app-plus__img-item {
+    &:last-of-type {
+      display: flex;
+    }
   }
 }
 

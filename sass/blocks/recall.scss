@@ -20,7 +20,7 @@
 }
 
 .recall__slide {
-  margin: 35px 105px 0;
+  margin: 35px auto 0;
   width: 85px;
 }
 
@@ -30,20 +30,27 @@
 
 @media (min-width: 700px) {
   .recall {
-    padding: 50px 40px;
+    padding: 41px 40px;
     display: flex;
     flex-direction: column;
   }
   .recall__text {
     order: -1;
+    margin-top: 0;
+    font-size: 18px;
+    line-height: 30px;
   }
   .recall__author-name {
-    margin-top: 44px; 
+    margin-top: 36px; 
     font-size: 20px;
   }
   .recall__author-bio {
+    margin-top: 9px; 
     display: block;
     font-size: 14px;
+  }
+  .recall__slide {
+    margin: 42px auto 0;
   }
 }
 
