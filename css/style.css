@@ -1,11 +1,13 @@
 .app-plus {
   text-align: center;
-  padding: 15px 40px 0;
-  /* 15px top */
-  background-color: #f2f2f2; }
+  padding: 54px 20px 0;
+  background-color: #f2f2f2;
+  background-image: url(../img/icon/bg-triangle-white.svg);
+  background-size: 100%;
+  background-repeat: no-repeat; }
 
 .app-plus__item {
-  margin-top: 15px; }
+  margin-top: 30px; }
 
 .app-plus__title {
   font-weight: 700;
@@ -13,11 +15,12 @@
 
 .app-plus__text {
   font-size: 14px;
-  margin-top: 15px; }
+  margin-top: 12px;
+  line-height: 24px; }
 
 .app-plus__img {
-  margin-top: 45px;
-  height: 280px;
+  margin-top: 42px;
+  height: 276px;
   overflow: hidden; }
 
 .app-plus__img-item:not(:last-of-type) {
@@ -73,7 +76,7 @@
     width: 1200px; } }
 
 .feedback {
-  padding: 20px 20px 0;
+  padding: 43px 20px 0;
   text-align: center; }
 
 .feedback__title {
@@ -81,12 +84,14 @@
   font-weight: 300; }
 
 .feedback__item {
-  margin-top: 15px; }
+  margin-top: 20px; }
   .feedback__item b {
     display: block;
     width: 100%;
     font-size: 18px;
     font-weight: 700; }
+  .feedback__item:first-of-type {
+    margin-top: 30px; }
 
 .feedback__text {
   font-size: 24px;
@@ -124,9 +129,9 @@
   height: 395px; }
 
 .intro img {
-  margin: 81px 0 0;
-  width: 320px;
-  height: 314px; }
+  margin: 107px 0 0;
+  width: 255px;
+  height: 288px; }
 
 @media (min-width: 320px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 320px) and (min-resolution: 144dpi), (min-width: 320px) and (min-resolution: 1.5dppx) {
   background-image: url(../img/bg-back-mobile@2x.jpg); }
@@ -159,7 +164,7 @@
 
 .logo {
   background-color: #283645;
-  padding: 22px 20px 20px;
+  padding: 20px 20px 19px;
   position: relative; }
   .logo:after {
     content: "";
@@ -218,7 +223,7 @@
     width: 25%; } }
 
 .mobile-app {
-  padding: 25px 20px 15px;
+  padding: 27px 20px 28px;
   background-color: #283645;
   text-align: center; }
 
@@ -227,7 +232,7 @@
   color: #fff;
   border: 2px solid #fff;
   margin: 0 auto;
-  padding: 10px;
+  padding: 14px;
   width: 280px;
   display: block;
   text-align: center;
@@ -240,7 +245,7 @@
   display: none; }
 
 .mobile-app__logo {
-  margin-top: 20px;
+  margin-top: 29px;
   padding: 0 20px;
   display: -ms-flexbox;
   display: flex;
@@ -252,7 +257,8 @@
 .mobile-app__text {
   font-size: 14px;
   font-weight: 300;
-  margin-top: 15px;
+  margin-top: 26px;
+  line-height: 24px;
   color: #fff; }
 
 @media (min-width: 700px) {
@@ -283,12 +289,13 @@
     top: -848px; } }
 
 .offer {
-  padding: 20px 20px 0; }
+  padding: 37px 20px 28px; }
 
 .offer__title {
   font-size: 24px;
   font-weight: 300;
-  text-align: center; }
+  text-align: center;
+  line-height: 30px; }
 
 @media (min-width: 700px) {
   .offer {
@@ -331,7 +338,10 @@
 
 .price {
   background-color: #f2f2f2;
-  padding: 50px 20px 30px; }
+  padding: 91px 20px 30px;
+  background-image: url(../img/icon/bg-triangle-white.svg);
+  background-size: 100%;
+  background-repeat: no-repeat; }
 
 .price__table {
   width: 100%;
@@ -350,7 +360,7 @@
   color: #fff;
   text-transform: uppercase;
   width: 156px;
-  height: 79px;
+  height: 99px;
   position: relative; }
   .price__header:nth-of-type(3) {
     -moz-column-span: all;
@@ -360,23 +370,25 @@
 
 .price__include {
   background-color: #fff;
-  line-height: 49px;
+  line-height: 58px;
   border: 2px solid #e5e5e5;
   text-align: center;
-  position: relative; }
+  position: relative;
+  text-transform: uppercase;
+  font-size: 14px; }
   .price__include:first-of-type {
     text-align: left;
-    padding-left: 15px;
+    padding-left: 20px;
     min-width: 157px; }
   .price__include--yes:after {
     content: "";
     background-image: url(../img/icon/icon-yes.svg);
     background-repeat: no-repeat;
-    width: 25px;
-    height: 20px;
+    width: 27px;
+    height: 25px;
     position: absolute;
     right: 20px;
-    top: 20px; }
+    top: 15px; }
   .price__include--no:after {
     content: "";
     background-image: url(../img/icon/icon-no.svg);
@@ -393,11 +405,12 @@
   top: 0;
   left: 0; }
   .price__hit small {
-    top: 9px;
-    left: 6px;
+    top: 11px;
+    left: 8px;
     position: absolute;
     transform: rotate(-45deg);
-    font-size: 20px;
+    font-size: 14px;
+    line-height: 30px;
     font-weight: 300; }
   .price__hit svg {
     margin-left: -16px; }
@@ -412,7 +425,8 @@
 
 .price__slide {
   text-align: center;
-  margin-top: 20px; }
+  width: 75px;
+  margin: 42px 110px 0; }
 
 .price__switch {
   text-align: center;
@@ -426,7 +440,7 @@
     opacity: 0; }
   .price__switch:not(checked) + label {
     position: relative;
-    padding: 0 0 0 20px; }
+    padding: 0 0 0 25px; }
   .price__switch:not(checked) + label:before {
     content: "";
     position: absolute;
@@ -474,7 +488,7 @@
     padding: 80px 130px 50px; } }
 
 .recall {
-  padding: 20px;
+  padding: 30px 20px;
   text-align: center; }
 
 .recall__author-name {
@@ -486,12 +500,14 @@
   display: none; }
 
 .recall__text {
-  margin-top: 15px;
+  margin-top: 17px;
   font-size: 14px;
-  font-weight: 400; }
+  font-weight: 400;
+  line-height: 30px; }
 
 .recall__slide {
-  margin-top: 15px; }
+  margin: 35px 105px 0;
+  width: 85px; }
 
 .recall__switch {
   text-align: center;
@@ -505,7 +521,7 @@
     opacity: 0; }
   .recall__switch:not(checked) + label {
     position: relative;
-    padding: 0 0 0 20px; }
+    padding: 0 0 0 25px; }
   .recall__switch:not(checked) + label:before {
     content: "";
     position: absolute;
@@ -610,12 +626,20 @@
   margin-top: 30px;
   width: 100%;
   height: 215px;
-  background-image: url(../img/bg-map-mobile@1x.png);
-  background-size: 100%; }
-
-@media (min-width: 320px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 320px) and (min-resolution: 144dpi), (min-width: 320px) and (min-resolution: 1.5dppx) {
-  .map {
-    background-image: url(../img/bg-map-mobile@2x.jpg); } }
+  position: relative;
+  background-image: url(../img/bg-map-mobile@1x.jpg);
+  background-size: 100%;
+  background-position: 0 100%; }
+  .map:before {
+    content: "";
+    width: 320px;
+    height: 36px;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-image: url(../img/icon/bg-triangle-white-footer.svg);
+    background-size: 100%;
+    background-repeat: no-repeat; }
 
 @media (min-width: 700px) {
   .map {

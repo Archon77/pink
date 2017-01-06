@@ -1,11 +1,14 @@
 .app-plus {
   text-align: center;
-  padding: 15px 40px 0; /* 15px top */
+  padding: 54px 20px 0;
   background-color: #f2f2f2;
+  background-image: url(../img/icon/bg-triangle-white.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 
 .app-plus__item {
-  margin-top: 15px;
+  margin-top: 30px;
 }
 
 .app-plus__title {
@@ -15,12 +18,13 @@
 
 .app-plus__text {
   font-size: 14px;
-  margin-top: 15px;
+  margin-top: 12px;
+  line-height: 24px;
 }
 
 .app-plus__img {
-  margin-top: 45px;
-  height: 280px;
+  margin-top: 42px;
+  height: 276px;
   overflow: hidden;
 }
 

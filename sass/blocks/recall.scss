@@ -1,5 +1,5 @@
 .recall {
-  padding: 20px;
+  padding: 30px 20px;
   text-align: center;
 }
 
@@ -13,13 +13,15 @@
 }
 
 .recall__text {
-  margin-top: 15px;
+  margin-top: 17px;
   font-size: 14px;
   font-weight: 400;
+  line-height: 30px;
 }
 
 .recall__slide {
-  margin-top: 15px;
+  margin: 35px 105px 0;
+  width: 85px;
 }
 
 .recall__switch {
