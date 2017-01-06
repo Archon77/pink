@@ -57,11 +57,11 @@
 @media (min-width: 1200px) {
   .recall {
   position: relative;
-  padding: 100px 130px 50px;
+  padding: 165px 130px 50px;
     &:before {
       content: "";
       position: absolute;
-      top: 113px;
+      top: 210px;
       left: 130px;
       width: 22px;
       height: 41px;
@@ -71,7 +71,7 @@
     &:after {
       content: "";
       position: absolute;
-      top: 113px;
+      top: 210px;
       right: 130px;
       width: 22px;
       height: 41px;
@@ -89,12 +89,20 @@
     &:before {
       content: "";
       position: absolute;
-      top: -20px;
+      top: 70px;
       left: 47%;
       width: 79px;
       height: 63px;
       background-image: url(../img/icon/icon-quotes.svg);
     }
+  }
+  .recall__author-name {
+    line-height: 30px;
+    font-size: 24px;
+  }
+  .recall__author-bio {
+    margin-top: 5px;
+    font-size: 18px;
   }
   
 }

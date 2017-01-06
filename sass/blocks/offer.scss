@@ -17,6 +17,13 @@
   .offer__title {
     font-size: 40px;
   }
-  
-  
+}
+
+@media (min-width: 1200px) {
+  .offer {
+    padding: 80px 224px 95px;
+  }
+  .offer__title {
+    font-size: 50px;
+  }
 }

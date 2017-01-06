@@ -37,9 +37,9 @@
   .logo {
     position: absolute;
     background-color: transparent;
-    width: 30%;
+    width: 20%;
     z-index: 1;
-    
+    padding: 26px 0 38px 128px;
     &:after {
       display: none;
     }

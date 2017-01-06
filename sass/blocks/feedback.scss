@@ -4,6 +4,7 @@
 }
 
 .feedback__title {
+  margin-left: 0;
   font-size: 24px;
   font-weight: 300;
 }
@@ -32,11 +33,13 @@
 @media (min-width: 700px) {
   .feedback {
     padding: 56px 71px 25px; 
+    
+  }
+  .feedback__group {
     display: flex;
     flex-wrap: wrap;
   }
   .feedback__title {
-    margin: 0 90px;
     width: 100%;
     display: block;
     font-size: 40px;
@@ -52,13 +55,25 @@
 
 @media (min-width: 1200px) {
   .feedback {
-    padding: 56px 130px 20px; 
+    padding: 106px 130px 20px; 
   }
   .feedback__title {
-    margin: 0 210px;
+    font-size: 50px;
+    
   }
   .feedback__item {
     width: 33.333%; 
+    margin: 45px auto 0;
+    &--first {
+      order: -2;
+    }
+    &--last {
+      order: -1;
+    }
+  }
+  .feedback__text {
+    margin-top: 21px;
+    display: block;
   }
 }
 

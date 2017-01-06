@@ -50,7 +50,6 @@
   }
   .mobile-app__download {
     margin-top: 29px;
-    
   }
   .mobile-app__logo {
     margin-top: 45px;
@@ -65,6 +64,26 @@
 
 @media (min-width: 1200px) {
   .mobile-app {
-    top: -848px;
+    top: -718px;
+    padding: 82px 4px;
   }
+  .mobile-app__title {
+    margin: 0 140px 0 137px;
+    font-size: 50px;
+    line-height: 60px;
+  }
+  .mobile-app__download {
+    margin-top: 53px;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 22px;
+  }
+  .mobile-app__logo {
+    margin-top: 66px;
+    padding: 0 136px;
+  }
+  .mobile-app__text {
+    margin: 54px 90px 0;
+  }
+  
 }
