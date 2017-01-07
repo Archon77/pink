@@ -136,3 +136,35 @@
     order: -1;
   }
 }
+
+
+
+@media (min-width: 120px) {
+  .gallery {
+    padding: 0 130px;
+  }
+  .gallery-item {
+    width: 300px;
+    
+    &:nth-of-type(5) { /* 0 margin-left from tablet */
+      margin-left: 0;
+    }
+    
+    
+    &:nth-of-type(3),
+    &:nth-of-type(4),
+    &:nth-of-type(6),
+    &:nth-of-type(7) { /* wrap between  */
+      margin: 0 0 20px 20px;
+    }
+    &:nth-of-type(5),
+    &:nth-of-type(6),
+    &:nth-of-type(7) { /* 0 margin-bottom last two blocks */
+      margin-bottom: 0;
+    }
+    &--first {
+      width: 100%;
+    }
+  }
+  
+}
