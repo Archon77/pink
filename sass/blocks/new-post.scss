@@ -3,13 +3,6 @@
   background-color: #f2f2f2;
 }
 
-
-
-
-.new-post__preview {
-  
-}
-
 .new-post__filter-group {
   padding: 40px 40px;
   display: flex;
@@ -76,3 +69,35 @@
     opacity: 0.1;
   }
 }
+
+@media (min-width: 700px) {
+  .new-post {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .new-post__preview {
+    background-color: black; /*#758cb9*/
+    width: 50%;
+    height: 100%;    
+  }
+  
+  .new-post__filter-group {
+    width: 50%;
+    height: 50%;
+    flex-direction: column;
+    box-sizing: border-box;
+      &:before,
+      &:after {
+        display: none;
+      }
+    }
+  .new-post__upload {
+    width: 50%;
+    &:before { /* border-line */
+      display: none;
+    }
+  }
+}
+
+

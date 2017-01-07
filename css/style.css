@@ -171,8 +171,21 @@
     margin-top: 21px;
     display: block; } }
 
+.gallery {
+  padding: 0 20px;
+  position: relative;
+  border-top: 1px solid white;
+  /* sry :( */
+  margin-top: -1px; }
+
 .gallery-item {
-  position: relative; }
+  margin-bottom: 20px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
 
 .gallery-item__panorama {
   display: block;
@@ -188,17 +201,25 @@
   text-transform: uppercase; }
 
 .gallery-item__img {
-  padding: 0 20px;
-  display: block;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
   height: 180px; }
   .gallery-item__img--first {
-    padding: 0;
-    height: 135px; }
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 135px;
+    margin-bottom: 1px; }
 
 .gallery-item__footer {
-  margin: 0 20px 20px;
   padding: 25px 23px 20px 17px;
   background-color: #f2f2f2; }
+  .gallery-item__footer--first {
+    margin-top: 135px; }
+
+.gallery-item__text {
+  margin-bottom: 15px; }
 
 .gallery-item__autor {
   font-size: 14px;
@@ -215,15 +236,59 @@
   font-weight: 400; }
 
 .gallery-item__like {
-  margin-top: 15px; }
+  margin-top: auto;
+  height: 14px; }
 
 .gallery-item__value {
   margin-left: 20px;
   font-size: 12px;
   font-weight: 400;
-  line-height: 24px;
   text-transform: uppercase;
   color: #d22856; }
+
+@media (min-width: 700px) {
+  .gallery {
+    padding: 0 40px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+  .gallery-item {
+    width: 300px; }
+    .gallery-item:nth-of-type(3), .gallery-item:nth-of-type(5), .gallery-item:nth-of-type(7) {
+      /* wrap between  */
+      margin: 0 0 20px 20px; }
+    .gallery-item:nth-of-type(6), .gallery-item:nth-of-type(7) {
+      /* 0 margin-bottom last two blocks */
+      margin-bottom: 0; }
+    .gallery-item--first {
+      width: 100%; }
+  .gallery-item__img {
+    height: 300px; }
+    .gallery-item__img--first {
+      padding: 0;
+      height: 509px; }
+  .gallery-item__footer {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-positive: 1;
+        flex-grow: 1; }
+    .gallery-item__footer--first {
+      margin-top: 509px; }
+  .gallery-item__like {
+    margin-top: auto;
+    width: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+        justify-content: space-between; }
+  .gallery-item__value {
+    -ms-flex-order: -1;
+        order: -1; } }
 
 .intro {
   background-image: url(../img/bg-back-mobile@1x.jpg);
@@ -255,10 +320,17 @@
   .intro {
     height: 618px;
     background-image: url(../img/bg-back-tablet@1x.jpg); }
+    .intro--small {
+      height: 330px;
+      background-size: 160%;
+      background-position: 50% 30%; }
   .intro img {
     margin: 73px 0 0;
     width: 700px;
-    height: 545px; } }
+    height: 545px; }
+  .intro__text {
+    font-size: 50px;
+    padding: 81px 23.75%; } }
 
 @media (min-width: 700px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 700px) and (min-resolution: 144dpi), (min-width: 700px) and (min-resolution: 1.5dppx) {
   .intro {
@@ -513,6 +585,31 @@
     color: #283645;
     opacity: 0.1; }
 
+@media (min-width: 700px) {
+  .new-post {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+  .new-post__preview {
+    background-color: black;
+    /*#758cb9*/
+    width: 50%;
+    height: 100%; }
+  .new-post__filter-group {
+    width: 50%;
+    height: 50%;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    box-sizing: border-box; }
+    .new-post__filter-group:before, .new-post__filter-group:after {
+      display: none; }
+  .new-post__upload {
+    width: 50%; }
+    .new-post__upload:before {
+      /* border-line */
+      display: none; } }
+
 .offer {
   padding: 37px 20px 28px;
   text-align: center; }
@@ -532,7 +629,10 @@
   .offer {
     padding: 59px 55px 38px; }
   .offer__title {
-    font-size: 40px; } }
+    font-size: 40px; }
+  .offer__text {
+    font-size: 18px;
+    line-height: 30px; } }
 
 @media (min-width: 1200px) {
   .offer {
@@ -1038,6 +1138,9 @@ p, h1, h2, h3 {
 
 td, th {
   padding: 0; }
+
+img {
+  width: 100%; }
 
 @media (min-width: 1200px) {
   body {

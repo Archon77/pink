@@ -35,11 +35,21 @@
   .intro {
     height: 618px;
     background-image: url(../img/bg-back-tablet@1x.jpg);
+    &--small {
+      height: 330px;
+      background-size: 160%;
+      background-position: 50% 30%;
+    }
   }
   .intro img {
     margin: 73px 0 0;
     width: 700px;
     height: 545px;
+  }
+  .intro__text {
+    font-size: 50px;
+    padding: 81px 23.75%;
+    
   }
 } 
 
