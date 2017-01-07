@@ -1,12 +1,19 @@
 .offer {
   padding: 37px 20px 28px;
+  text-align: center;
 }
 
 .offer__title {
   font-size: 24px;
   font-weight: 300;
-  text-align: center;
   line-height: 30px;
+}
+
+.offer__text {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+  margin: 0 15px;
 }
 
 

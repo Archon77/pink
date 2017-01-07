@@ -3,7 +3,9 @@
 }
 
 .social__link {
-  margin-left: 15px;
+  width: 51px;
+  height: 51px;
+  margin-left: 14px;
   display: flex;
   box-sizing: border-box;
   align-items: center;
@@ -20,10 +22,5 @@
 @media (min-width: 700px) {
   .social {
     margin-left: -16px;
-  }
-  .social__link {
-    width: 51px;
-    height: 51px;
-    margin-left: 14px;
   }
 }
