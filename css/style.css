@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .app-plus {
   text-align: center;
   padding: 54px 20px 0;
@@ -44,24 +45,26 @@
     height: 481px; }
   .app-plus__img-item:last-of-type {
     display: -ms-flexbox;
-    display: flex; } }
+    display: flex; }
+    .app-plus__img-item:last-of-type img {
+      /* width for ie */
+      width: 268px; } }
 
 @media (min-width: 1200px) {
   .app-plus {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    padding: 15px 164px 30px;
+    padding: 15px 130px 30px;
     background-size: 181% 173px; }
   .app-plus__img {
     width: 100%;
-    padding: 0 21px;
     height: 311px;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: justify;
         justify-content: space-between; }
   .app-plus__img-item {
-    width: 189px;
+    width: 300px;
     height: 300px;
     display: -ms-flexbox;
     display: flex;
@@ -70,8 +73,13 @@
     .app-plus__img-item:not(:last-of-type) {
       display: -ms-flexbox;
       display: flex; }
+    .app-plus__img-item:last-of-type {
+      /* img - "Всем привет!" */ }
+      .app-plus__img-item:last-of-type img {
+        /* width for ie */
+        width: 292px; }
   .app-plus__group {
-    padding: 40px 0 0 0;
+    padding: 40px 20px 0;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: justify;
@@ -110,6 +118,155 @@
 @media (min-width: 1200px) {
   .container {
     width: 1200px; } }
+
+.contest-form__group {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  color: #283645;
+  padding: 0 20px 42px;
+  background-color: #f2f2f2; }
+  .contest-form__group--full-name, .contest-form__group--contact {
+    text-transform: uppercase;
+    color: #d22856;
+    background-color: #ffffff;
+    /* белый бэкграунд формы */ }
+  .contest-form__group--recall {
+    background-color: #ffffff;
+    /* белый бэкграунд формы */
+    text-align: center; }
+    .contest-form__group--recall span {
+      /* "Обязательные поля" */
+      margin-top: 44px; }
+    .contest-form__group--recall sup {
+      /* "*" */
+      color: #d22856; }
+
+.contest-form__label {
+  /* text-input rules */
+  display: block;
+  width: 100%;
+  margin: 26px 0 0 23px; }
+  .contest-form__label--checkbox {
+    /* выставляю лейблы с запасом под инпут */
+    margin: 64px 0 0 70px; }
+    .contest-form__label--checkbox:first-of-type {
+      margin-top: 52px 0 0 70px; }
+  .contest-form__label--radio {
+    margin: 60px 0 0 70px; }
+    .contest-form__label--radio:first-of-type {
+      margin-top: 50px 0 0 70px; }
+
+.contest-form__input {
+  /* text-input rules */
+  width: 100%;
+  height: 63px;
+  margin-top: 14px;
+  padding: 24px 20px 20px 20px;
+  box-sizing: border-box;
+  border: 2px solid #e5e5e5;
+  font-family: "Open Sans";
+  font-size: 18px;
+  font-weight: 400;
+  color: #283645; }
+  .contest-form__input--recall {
+    padding: 25px 30px 25px 21px;
+    height: 200px; }
+  .contest-form__input--checkbox {
+    /* отключение дефолтных инпутов */
+    display: none; }
+    .contest-form__input--checkbox + label {
+      position: relative;
+      cursor: pointer; }
+    .contest-form__input--checkbox + label:before {
+      /* выкл */
+      content: "";
+      position: absolute;
+      top: -15px;
+      left: -65px;
+      width: 39px;
+      height: 39px;
+      box-sizing: border-box;
+      border: 2px solid #e5e5e5;
+      background-color: #ffffff; }
+    .contest-form__input--checkbox:checked + label:after {
+      /* checked */
+      content: "";
+      position: absolute;
+      top: -4px;
+      left: -54px;
+      width: 22px;
+      height: 16px;
+      box-sizing: border-box;
+      background-image: url(../img/icon/icon-yes-form.svg); }
+  .contest-form__input--radio {
+    /* отключение дефолтных инпутов */
+    display: none; }
+    .contest-form__input--radio + label {
+      position: relative;
+      cursor: pointer; }
+    .contest-form__input--radio + label:before {
+      /* выкл */
+      content: "";
+      position: absolute;
+      top: -15px;
+      left: -65px;
+      width: 39px;
+      height: 39px;
+      box-sizing: border-box;
+      border-radius: 50%;
+      border: 2px solid #e5e5e5;
+      background-color: #ffffff; }
+    .contest-form__input--radio:checked + label:after {
+      /* checked */
+      content: "";
+      position: absolute;
+      top: -5px;
+      left: -55px;
+      width: 18px;
+      height: 18px;
+      box-sizing: border-box;
+      border-radius: 50%;
+      background-color: #d22856; }
+
+.contest-form__legend {
+  padding: 41px 20px 0;
+  /* для отступа */
+  /*margin: 0 50px;*/
+  /* для отступа от бордеров филдсета */
+  font-size: 14px;
+  font-weight: 400;
+  box-sizing: border-box;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #d22856;
+  text-align: center;
+  background-color: #f2f2f2;
+  /* серый бэкграунд формы */
+  width: 100%; }
+  .contest-form__legend--recall {
+    background-color: #ffffff; }
+
+.contest-form__btn {
+  border-radius: 50px;
+  color: #fff;
+  border: 2px solid #fff;
+  margin: 0 auto;
+  padding: 14px;
+  width: 100%;
+  max-width: 300px;
+  display: block;
+  text-align: center;
+  box-sizing: border-box;
+  font-weight: 700;
+  font-size: 18px;
+  cursor: pointer;
+  border: none;
+  border-radius: 0;
+  background-color: #2aab6d;
+  text-transform: uppercase;
+  margin-top: 41px; }
 
 .feedback {
   padding: 43px 20px 30px;
@@ -171,6 +328,11 @@
     margin-top: 21px;
     display: block; } }
 
+.fieldset {
+  border: none;
+  padding: 0;
+  margin: 0; }
+
 .gallery {
   padding: 0 20px;
   position: relative;
@@ -211,6 +373,9 @@
     left: 0;
     height: 135px;
     margin-bottom: 1px; }
+  .gallery-item__img img {
+    /* 100% width for ie */
+    width: 100%; }
 
 .gallery-item__footer {
   padding: 25px 23px 20px 17px;
@@ -291,7 +456,7 @@
     -ms-flex-order: -1;
         order: -1; } }
 
-@media (min-width: 120px) {
+@media (min-width: 1200px) {
   .gallery {
     padding: 0 130px; }
   .gallery-item {
@@ -330,6 +495,8 @@
   text-align: center;
   display: block;
   padding: 71px 23.75%; }
+  .intro__text--form {
+    padding: 56px 46px 53px; }
 
 @media (min-width: 320px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 320px) and (min-resolution: 144dpi), (min-width: 320px) and (min-resolution: 1.5dppx) {
   background-image: url(../img/bg-back-mobile@2x.jpg); }
@@ -495,7 +662,7 @@
     position: absolute;
     top: -618px;
     left: 20px;
-    width: 42.8%;
+    width: 350px;
     padding: 90px 20px; }
   .mobile-app__title {
     margin: 0 57px;
@@ -517,6 +684,7 @@
 @media (min-width: 1200px) {
   .mobile-app {
     top: -718px;
+    width: 600px;
     padding: 82px 4px; }
   .mobile-app__title {
     margin: 0 140px 0 137px;

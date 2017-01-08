@@ -23,6 +23,9 @@
   text-align: center;
   display: block;
   padding: 71px 23.75%;
+  &--form {
+    padding: 56px 46px 53px;
+  }
 }
 
 @media (min-width: 320px) and (min-resolution: 144dpi),

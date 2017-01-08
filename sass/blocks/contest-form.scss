@@ -1,0 +1,151 @@
+
+.contest-form__group {
+  display: flex;
+  flex-direction: column;
+  color: #283645;
+  padding: 0 20px 42px;
+  background-color: #f2f2f2;
+  &--full-name,
+  &--contact {
+    text-transform: uppercase;
+    color: #d22856;
+    background-color: #ffffff; /* белый бэкграунд формы */
+  }
+  &--recall {
+    background-color: #ffffff; /* белый бэкграунд формы */
+    text-align: center;
+    & span { /* "Обязательные поля" */
+      margin-top: 44px;
+    }
+    & sup { /* "*" */
+      color: #d22856;
+    }
+  }
+  
+}
+
+
+.contest-form__label {  /* text-input rules */
+  display: block;
+  width: 100%;
+  margin: 26px 0 0 23px;
+  
+  &--checkbox { /* выставляю лейблы с запасом под инпут */
+    margin: 64px 0 0 70px;
+    &:first-of-type {
+      margin-top: 52px 0 0 70px;
+    }
+  }
+  &--radio {
+    margin: 60px 0 0 70px;
+    &:first-of-type {
+      margin-top: 50px 0 0 70px;
+    }
+    
+  }
+}
+
+.contest-form__input { /* text-input rules */
+  width: 100%;
+  height: 63px;
+  margin-top: 14px;
+  padding: 24px 20px 20px 20px;
+  box-sizing: border-box;
+  border: 2px solid #e5e5e5;
+  font-family: "Open Sans";
+  font-size: 18px;
+  font-weight: 400;
+  color: #283645;
+  &--recall {
+    padding: 25px 30px 25px 21px;
+    height: 200px;
+  }
+  &--checkbox { /* отключение дефолтных инпутов */
+    display: none;
+    
+    & + label {
+      position: relative;
+      cursor: pointer;
+    }
+    & + label:before { /* выкл */
+      content: "";
+      position: absolute;
+      top: -15px;
+      left: -65px;
+      width: 39px;
+      height: 39px;
+      box-sizing: border-box;
+      border: 2px solid #e5e5e5;
+      background-color: #ffffff;
+    }
+    &:checked + label:after { /* checked */
+      content: "";
+      position: absolute;
+      top: -4px;
+      left: -54px;
+      width: 22px;
+      height: 16px;
+      box-sizing: border-box;
+      background-image: url(../img/icon/icon-yes-form.svg)
+    }
+  }
+  &--radio {  /* отключение дефолтных инпутов */
+    display: none;
+    
+    & + label {
+      position: relative;
+      cursor: pointer;
+    }
+    & + label:before { /* выкл */
+      content: "";
+      position: absolute;
+      top: -15px;
+      left: -65px;
+      width: 39px;
+      height: 39px;
+      box-sizing: border-box;
+      border-radius: 50%;
+      border: 2px solid #e5e5e5;
+      background-color: #ffffff;
+    }
+    &:checked + label:after { /* checked */
+      content: "";
+      position: absolute;
+      top: -5px;
+      left: -55px;
+      width: 18px;
+      height: 18px;
+      box-sizing: border-box;
+      border-radius: 50%;
+      background-color: #d22856;
+    }
+  }
+}
+
+
+.contest-form__legend {
+  padding: 41px 20px 0;  /* для отступа */
+  /*margin: 0 50px;*/  /* для отступа от бордеров филдсета */
+  font-size: 14px;
+  font-weight: 400;
+  box-sizing: border-box;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #d22856;
+  text-align: center;
+  background-color: #f2f2f2; /* серый бэкграунд формы */
+  width: 100%;
+  &--recall {
+    background-color: #ffffff;
+  }
+}
+
+
+.contest-form__btn {
+  @include rbtn();
+  border: none;
+  border-radius: 0;
+  background-color: #2aab6d;
+  text-transform: uppercase;
+  margin-top: 41px;
+}

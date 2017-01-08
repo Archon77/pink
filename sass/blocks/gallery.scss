@@ -30,9 +30,6 @@
   display: flex;
   width: 100%;
   height: 180px;
-  & img {
-    
-  }
   &--first {
     position: absolute;
     top: 0;
@@ -40,6 +37,10 @@
     height: 135px;
     margin-bottom: 1px;
   }
+  & img { /* 100% width for ie */
+    width: 100%;
+  }
+  
 }
 
 .gallery-item__footer {
@@ -139,7 +140,7 @@
 
 
 
-@media (min-width: 120px) {
+@media (min-width: 1200px) {
   .gallery {
     padding: 0 130px;
   }

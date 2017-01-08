@@ -37,7 +37,7 @@
     position: absolute;
     top: -618px;
     left: 20px;
-    width: 42.8%;
+    width: 350px;
     padding: 90px 20px;
   }
   .mobile-app__title {
@@ -65,6 +65,7 @@
 @media (min-width: 1200px) {
   .mobile-app {
     top: -718px;
+    width: 600px;
     padding: 82px 4px;
   }
   .mobile-app__title {

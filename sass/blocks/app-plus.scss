@@ -55,6 +55,10 @@
   .app-plus__img-item {
     &:last-of-type {
       display: flex;
+      
+      & img { /* width for ie */
+        width: 268px;
+      }
     }
   }
 }
@@ -64,27 +68,31 @@
 @media (min-width: 1200px) {
   .app-plus {
     flex-wrap: wrap;
-    padding: 15px 164px 30px;
+    padding: 15px 130px 30px;
     background-size: 181% 173px;
   }
   .app-plus__img {
     width: 100%;
-    padding: 0 21px;
     height: 311px;
     display: flex;
     justify-content: space-between;
   }
   .app-plus__img-item {
-    width: 189px;
+    width: 300px;
     height: 300px;    
     display: flex;
     justify-content: center;
     &:not(:last-of-type) {
       display: flex;
     }
+    &:last-of-type { /* img - "Всем привет!" */
+      & img { /* width for ie */
+        width: 292px;
+      }
+    }
   }
   .app-plus__group {
-    padding: 40px 0 0 0;
+    padding: 40px 20px 0;
     display: flex;
     justify-content: space-between;
     width: 100%;
