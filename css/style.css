@@ -140,10 +140,13 @@
   .contest-form__group--submit {
     text-align: center;
     background-color: #ffffff;
-    /* белый бэкграунд формы */ }
+    /* белый бэкграунд формы */
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column; }
     .contest-form__group--submit span {
-      /* "Обязательные поля" */
-      margin-top: 44px; }
+      margin-top: 30px; }
     .contest-form__group--submit sup {
       /* "*" */
       color: #d22856; }
@@ -286,12 +289,22 @@
     box-sizing: border-box; }
     .contest-form__group--full-name {
       padding: 0 0 42px; }
-    .contest-form__group--radio {
-      -ms-flex-order: -1;
-          order: -1;
-      /*  доработать престроение блоков  */ }
+    .contest-form__group--contact {
+      padding: 0 60px 42px; }
     .contest-form__group--submit {
-      margin-top: 30px; }
+      margin-top: 30px;
+      -ms-flex-direction: row;
+          flex-direction: row;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+      .contest-form__group--submit span {
+        margin-top: 0;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-align: center;
+            align-items: center; }
+  .contest-form__btn {
+    margin: 0; }
   .contest-form__label {
     /* text-input rules */
     width: auto;
@@ -302,13 +315,14 @@
         align-items: center; }
     .contest-form__label--radio {
       width: 100%; }
+    .contest-form__label--checkbox {
+      width: 36%; }
     .contest-form__label--phone, .contest-form__label--email {
       /* отдельно стилизация телефонно - почтовых лейблов */
       margin: 20px 0 0 20px; }
   .contest-form__input {
     /* text-input rules */
     width: auto;
-    margin: 0 0 0 20px;
     -ms-flex-positive: 1;
         flex-grow: 1; }
     .contest-form__input--phone, .contest-form__input--email {
@@ -324,12 +338,65 @@
         flex-direction: column;
     margin-top: 52px;
     width: 100%; }
+    .contest-form__field--first {
+      /* "Фамилия" */
+      margin-top: 0; }
+    .contest-form__field--phone {
+      /* модификатор для добавления картинок на псевдо */
+      position: relative; }
+      .contest-form__field--phone:after {
+        content: "";
+        width: 60px;
+        height: 60px;
+        position: absolute;
+        top: 1px;
+        right: 1px;
+        background-color: #e5e5e5;
+        background-image: url(../img/icon/icon-phone.svg);
+        background-size: 20px;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        cursor: pointer; }
+    .contest-form__field--email {
+      /* модификатор для добавления картинок на псевдо */
+      position: relative; }
+      .contest-form__field--email:after {
+        content: "";
+        width: 60px;
+        height: 60px;
+        position: absolute;
+        top: 1px;
+        right: 1px;
+        background-color: #e5e5e5;
+        background-image: url(../img/icon/icon-mail.svg);
+        background-size: 20px;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        cursor: pointer; }
   .contest-form__legend {
     width: auto;
     /* для отступа от бордеров филдсета */
     margin: 0;
     padding: 0 30px;
     background-color: #ffffff; } }
+
+@media (min-width: 1200px) {
+  .contest-form {
+    padding: 0 130px; }
+  .contest-form__group--full-name {
+    padding: 0; }
+  .contest-form__field--full-name {
+    -ms-flex-direction: row;
+        flex-direction: row; }
+  .contest-form__field--phone {
+    width: 375px; }
+  .contest-form__field--email {
+    width: 375px;
+    margin-left: 60px; }
+  .contest-form__input--full-name {
+    margin: 0 0 0 30px; }
+  .contest-form__label--checkbox {
+    width: 25%; } }
 
 .feedback {
   padding: 43px 20px 30px;
@@ -401,9 +468,42 @@
   .fieldset {
     border: 2px solid #e5e5e5;
     margin: 20px 40px 0;
+    /* width: 620px;*/
+    /* 700px--40px-40px */
+    display: block;
     box-sizing: border-box; }
     .fieldset--no-border {
-      border: none; } }
+      border: none; }
+    .fieldset--full-name {
+      /* может большинство и не нужно */
+      -ms-flex-order: 1;
+          order: 1; }
+    .fieldset--checkbox {
+      -ms-flex-order: 4;
+          order: 4; }
+    .fieldset--contact {
+      -ms-flex-order: 3;
+          order: 3; }
+    .fieldset--radio {
+      -ms-flex-order: 2;
+          order: 2; }
+    .fieldset--recall {
+      -ms-flex-order: 5;
+          order: 5; }
+    .fieldset--submit {
+      -ms-flex-order: 6;
+          order: 6; } }
+
+@media (min-width: 1200px) {
+  .fieldset {
+    padding: 0;
+    margin: 0 0 65px;
+    width: 100%; }
+    .fieldset--full-name {
+      width: 435px; }
+    .fieldset--radio {
+      width: 435px;
+      margin-left: 70px; } }
 
 .gallery {
   padding: 0 20px;

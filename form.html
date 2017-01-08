@@ -117,23 +117,23 @@
         <p class="offer__text--form offer__text--hidden">Пожалуйста, заполните форму ниже:</p>
       </div>
       <form class="contest-form" action="https://echo.htmlacademy.ru/" method="get">
-        <fieldset class="fieldset fieldset--no-border">
+        <fieldset class="fieldset fieldset--full-name fieldset--no-border">
           <div class="contest-form__group contest-form__group--full-name">
-            <div class="contest-form__field">
+            <div class="contest-form__field contest-form__field--full-name contest-form__field--first ">
               <label class="contest-form__label" for="last_name">Фамилия:</label>
-              <input class="contest-form__input" id="last_name" type="text" name="last_name" placeholder="Укажите фамилию" required>
+              <input class="contest-form__input contest-form__input--full-name" id="last_name" type="text" name="last_name" placeholder="Укажите фамилию" required>
             </div>
-            <div class="contest-form__field">
+            <div class="contest-form__field contest-form__field--full-name">
               <label class="contest-form__label" for="first_name">Имя:</label> 
-              <input class="contest-form__input" id="first_name" type="text" name="first_name" placeholder="Укажите имя" required>
+              <input class="contest-form__input contest-form__input--full-name" id="first_name" type="text" name="first_name" placeholder="Укажите имя" required>
             </div>
-            <div class="contest-form__field">
+            <div class="contest-form__field contest-form__field--full-name">
               <label class="contest-form__label" for="patronymic">Отчество:</label>
-              <input class="contest-form__input" id="patronymic" type="text" name="patronymic" placeholder="Ну и отчество тоже">
+              <input class="contest-form__input contest-form__input--full-name" id="patronymic" type="text" name="patronymic" placeholder="Ну и отчество тоже">
             </div>
           </div>
         </fieldset>
-        <fieldset class="fieldset">  
+        <fieldset class="fieldset fieldset--checkbox">  
           <legend class="contest-form__legend contest-form__legend--checkbox">Ваши безбашенные достижения в путешествии</legend>
           <div class="contest-form__group contest-form__group--checkbox">
             <input class="contest-form__input--checkbox" name="impression" id="selfie" type="checkbox" value="selfie" checked>
@@ -149,19 +149,19 @@
             <label class="contest-form__label--checkbox" for="hotel">Разгромил отель</label> 
           </div>
         </fieldset>
-        <fieldset class="fieldset">
+        <fieldset class="fieldset fieldset--contact">
           <div class="contest-form__group contest-form__group--contact">
-             <div class="contest-form__field">
+             <div class="contest-form__field contest-form__field--phone">
               <label class="contest-form__label contest-form__label--phone" for="phone">Номер телефона:</label>
               <input class="contest-form__input contest-form__input--phone" id="phone" type="tel" name="phone" placeholder="Номер, пожалуйста" required>
             </div>
-            <div class="contest-form__field">  
+            <div class="contest-form__field contest-form__field--email">  
               <label class="contest-form__label contest-form__label--email" for="email">Адрес почты:</label>
               <input class="contest-form__input contest-form__input--email" id="email" type="email" name="email" placeholder="Введите почту" required>
             </div>  
           </div>
         </fieldset>
-        <fieldset class="fieldset">
+        <fieldset class="fieldset fieldset--radio">
           <legend class="contest-form__legend contest-form__legend--radio">С каким приложением путешествовали?</legend>
           <div class="contest-form__group contest-form__group--radio">
             <input class="contest-form__input--radio" name="phone_os" id="iOS" type="radio" value="iOS" checked>
@@ -172,14 +172,14 @@
             <label class="contest-form__label--radio" for="Windows">Windows Phone</label> 
           </div>
         </fieldset>
-        <fieldset class="fieldset">
+        <fieldset class="fieldset fieldset--recall">
           <legend class="contest-form__legend contest-form__legend--recall">Опишите свои эмоции:</legend>
            <div class="contest-form__group contest-form__group--recall"> 
             <textarea class="contest-form__input contest-form__input--recall" rows="5" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
             
           </div>
         </fieldset>
-        <div class="contest-form__group contest-form__group--submit">
+        <div class="contest-form__group contest-form__group--submit fieldset--submit">
           <input class="contest-form__btn" type="submit" value="Отправить форму">
           <span>
             <sup>*</sup> &ndash; Обязательные поля

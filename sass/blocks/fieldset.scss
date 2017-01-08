@@ -9,10 +9,45 @@
 @media (min-width: 700px) {
   .fieldset {
     border: 2px solid #e5e5e5;
-    margin: 20px 40px 0;
+    margin: 20px 40px 0;    
+   /* width: 620px;*/ /* 700px--40px-40px */
+    display: block;
     box-sizing: border-box;
     &--no-border {
       border: none;
+    }
+    &--full-name {  /* может большинство и не нужно */
+      order: 1;
+    }
+    &--checkbox {
+      order: 4;
+    }
+    &--contact {
+      order: 3;
+    }
+    &--radio {
+      order: 2;
+    }
+    &--recall {
+      order: 5;
+    }
+    &--submit {
+      order: 6;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .fieldset {
+    padding: 0;
+    margin: 0 0 65px;
+    width: 100%;
+    &--full-name {
+      width: 435px;
+    }
+    &--radio {
+      width: 435px;
+      margin-left: 70px;
     }
   }
 }

@@ -20,8 +20,11 @@
   &--submit {
     text-align: center;
     background-color: #ffffff; /* белый бэкграунд формы */
-    & span { /* "Обязательные поля" */
-      margin-top: 44px;
+    display: flex;
+    flex-direction: column;
+    
+    & span {
+      margin-top: 30px;
     }
     & sup { /* "*" */
       color: #d22856;
@@ -169,13 +172,22 @@
     &--full-name {
       padding: 0 0 42px;
     }
-    &--radio {
-      order: -1; /*  доработать престроение блоков  */
+    &--contact {
+      padding: 0 60px 42px;
     }
     &--submit {
       margin-top: 30px;
-    }
-    
+      flex-direction: row;
+      justify-content: space-between;
+      & span {
+      margin-top: 0;
+      display: flex;
+      align-items: center;
+      }
+    }    
+  }
+  .contest-form__btn {
+    margin: 0;
   }
   .contest-form__label {  /* text-input rules */
     width: auto;
@@ -185,18 +197,17 @@
     &--radio {
       width: 100%;
     }
-    
+    &--checkbox {
+      width: 36%;
+    }
     &--phone,
     &--email { /* отдельно стилизация телефонно - почтовых лейблов */
       margin: 20px 0 0 20px;
     }
-    
   }
   .contest-form__input { /* text-input rules */
     width: auto;
-    margin: 0 0 0 20px;
     flex-grow: 1;
-    
     &--phone,
     &--email { /* отдельно стилизация телефонно - почтовых инпутов */
       margin: 0;
@@ -209,6 +220,43 @@
     flex-direction: column;
     margin-top: 52px;
     width: 100%;
+    &--first {  /* "Фамилия" */
+      margin-top: 0;
+    }
+    &--phone { /* модификатор для добавления картинок на псевдо */
+      position: relative;
+      &:after {
+        content: "";
+        width: 60px;
+        height: 60px;
+        position: absolute;
+        top: 1px;
+        right: 1px;
+        background-color: #e5e5e5;
+        background-image: url(../img/icon/icon-phone.svg);
+        background-size: 20px;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        cursor: pointer;
+      }
+    }
+    &--email { /* модификатор для добавления картинок на псевдо */
+      position: relative;
+      &:after {
+        content: "";
+        width: 60px;
+        height: 60px;
+        position: absolute;
+        top: 1px;
+        right: 1px;
+        background-color: #e5e5e5;
+        background-image: url(../img/icon/icon-mail.svg);
+        background-size: 20px;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        cursor: pointer;
+      }
+    }  
   }
   .contest-form__legend {
     width: auto;
@@ -217,5 +265,45 @@
     margin: 0;
     padding: 0 30px;
     background-color: #ffffff;
+  }
+}
+
+
+@media (min-width: 1200px) {
+  .contest-form {
+    padding: 0 130px;
+  }
+  .contest-form__group {
+    
+    &--full-name {
+      padding: 0;
+    }
+  }
+  .contest-form__field {
+    
+    &--full-name {
+      flex-direction: row;
+    }
+    &--phone {
+      width: 375px;
+    }
+    &--email {
+      width: 375px;
+      margin-left: 60px;
+    }
+  }
+  .contest-form__input { 
+   
+    
+    &--full-name {
+       margin: 0 0 0 30px;
+    }
+    
+  }
+  .contest-form__label {
+    
+    &--checkbox {
+      width: 25%;
+    }
   }
 }
