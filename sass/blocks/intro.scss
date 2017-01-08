@@ -52,7 +52,9 @@
   .intro__text {
     font-size: 50px;
     padding: 81px 23.75%;
-    
+    &--form {
+      padding: 63px 113px 19px;
+    }
   }
 } 
 

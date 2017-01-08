@@ -113,10 +113,11 @@
     </header>
     <main class="page-content">
       <div class="offer">
-        <p class="offer__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
+        <p class="offer__text--form">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
+        <p class="offer__text--form offer__text--hidden">Пожалуйста, заполните форму ниже:</p>
       </div>
       <form class="contest-form" action="https://echo.htmlacademy.ru/" method="get">
-        <fieldset class="fieldset">
+        <fieldset class="fieldset fieldset--no-border">
           <div class="contest-form__group contest-form__group--full-name">
             <div class="contest-form__field">
               <label class="contest-form__label" for="last_name">Фамилия:</label>
@@ -150,13 +151,13 @@
         </fieldset>
         <fieldset class="fieldset">
           <div class="contest-form__group contest-form__group--contact">
-             <div class="contest-form__contact contest-form__contact--phone">
-              <label class="contest-form__label" for="phone"><span class="contest-form__label-phone">Контактный</span> телефон:</label>
-              <input class="contest-form__input" id="phone" type="tel" name="phone" placeholder="Номер, пожалуйста" required>
+             <div class="contest-form__field">
+              <label class="contest-form__label contest-form__label--phone" for="phone">Номер телефона:</label>
+              <input class="contest-form__input contest-form__input--phone" id="phone" type="tel" name="phone" placeholder="Номер, пожалуйста" required>
             </div>
-            <div class="contest-form__contact contest-form__contact--email">  
-              <label class="contest-form__label contest-form__label--email" for="email">Электронная почта:</label>
-              <input class="contest-form__input" id="email" type="email" name="email" placeholder="Введите почту" required>
+            <div class="contest-form__field">  
+              <label class="contest-form__label contest-form__label--email" for="email">Адрес почты:</label>
+              <input class="contest-form__input contest-form__input--email" id="email" type="email" name="email" placeholder="Введите почту" required>
             </div>  
           </div>
         </fieldset>
@@ -175,12 +176,15 @@
           <legend class="contest-form__legend contest-form__legend--recall">Опишите свои эмоции:</legend>
            <div class="contest-form__group contest-form__group--recall"> 
             <textarea class="contest-form__input contest-form__input--recall" rows="5" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
-            <input class="contest-form__btn" type="submit" value="Отправить форму">
-            <span>
-              <sup>*</sup> &ndash; Обязательные поля
-            </span>
+            
           </div>
         </fieldset>
+        <div class="contest-form__group contest-form__group--submit">
+          <input class="contest-form__btn" type="submit" value="Отправить форму">
+          <span>
+            <sup>*</sup> &ndash; Обязательные поля
+          </span>
+        </div>
       </form>
     </main>
     <footer class="page-footer">

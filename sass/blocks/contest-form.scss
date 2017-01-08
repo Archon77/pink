@@ -1,6 +1,7 @@
 
 .contest-form__group {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   color: #283645;
   padding: 0 20px 42px;
@@ -13,7 +14,12 @@
   }
   &--recall {
     background-color: #ffffff; /* белый бэкграунд формы */
+    
+    
+  }
+  &--submit {
     text-align: center;
+    background-color: #ffffff; /* белый бэкграунд формы */
     & span { /* "Обязательные поля" */
       margin-top: 44px;
     }
@@ -21,7 +27,6 @@
       color: #d22856;
     }
   }
-  
 }
 
 
@@ -125,7 +130,7 @@
 
 .contest-form__legend {
   padding: 41px 20px 0;  /* для отступа */
-  /*margin: 0 50px;*/  /* для отступа от бордеров филдсета */
+
   font-size: 14px;
   font-weight: 400;
   box-sizing: border-box;
@@ -147,5 +152,70 @@
   border-radius: 0;
   background-color: #2aab6d;
   text-transform: uppercase;
-  margin-top: 41px;
+}
+
+
+@media (min-width: 700px) {
+  .contest-form {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .contest-form__group {
+    background-color: #ffffff;  /* убрал серый бекграунд */
+    padding: 0 40px 42px;  
+    flex-direction: row;
+    width: 100%;
+    box-sizing: border-box;
+    &--full-name {
+      padding: 0 0 42px;
+    }
+    &--radio {
+      order: -1; /*  доработать престроение блоков  */
+    }
+    &--submit {
+      margin-top: 30px;
+    }
+    
+  }
+  .contest-form__label {  /* text-input rules */
+    width: auto;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    &--radio {
+      width: 100%;
+    }
+    
+    &--phone,
+    &--email { /* отдельно стилизация телефонно - почтовых лейблов */
+      margin: 20px 0 0 20px;
+    }
+    
+  }
+  .contest-form__input { /* text-input rules */
+    width: auto;
+    margin: 0 0 0 20px;
+    flex-grow: 1;
+    
+    &--phone,
+    &--email { /* отдельно стилизация телефонно - почтовых инпутов */
+      margin: 0;
+      order: -1;
+      width: 100%;
+    }
+  }
+  .contest-form__field {
+    display: flex;
+    flex-direction: column;
+    margin-top: 52px;
+    width: 100%;
+  }
+  .contest-form__legend {
+    width: auto;
+      /* для отступа от бордеров филдсета */
+    
+    margin: 0;
+    padding: 0 30px;
+    background-color: #ffffff;
+  }
 }
