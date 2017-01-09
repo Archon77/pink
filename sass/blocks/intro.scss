@@ -30,7 +30,9 @@
 
 @media (min-width: 320px) and (min-resolution: 144dpi),
        (min-width: 320px) and (min-resolution: 1.5dppx) {
-   background-image: url(../img/bg-back-mobile@2x.jpg);
+   .intro {  
+     background-image: url(../img/bg-back-mobile@2x.jpg);
+   }  
 }
 
 
