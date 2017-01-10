@@ -6,6 +6,16 @@
 
 .mobile-app__download {
   @include rbtn();
+  &:hover {
+    background-color: #fff;
+    color: #d22856;
+    transition-duration: 0.5s;
+  }
+  &:active{
+    background-color: #fff;
+    color: #d22856;
+    opacity: 0.3;
+  }
 }
 
 .mobile-app__title {

@@ -27,6 +27,17 @@
   font-size: 24px;
   font-weight: 300;
   color: #d22856;
+  &--mail {
+    &:hover {
+      color: #283645;
+      border-bottom: 2px solid #283645;
+    }
+    &:active {
+      color: #283645;
+      border-bottom: 2px solid #283645;
+      opacity: 0.3;
+    }
+  }
 }
 
 

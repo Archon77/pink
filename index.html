@@ -64,7 +64,7 @@
       <div class="logo">
         <a href="index.html">
           <picture class="logo__img">
-            <source media="(min-width: 1200px)" fill="#fff" srcset="img/icon/logo-pink-white-desktop.svg">
+            <source media="(min-width: 1200px)" srcset="img/icon/logo-pink-white-desktop.svg">
             <source media="(min-width: 700px)" srcset="img/icon/logo-pink-white-tablet.svg">
             <img src="img/icon/logo-pink-white-mobile.svg" width="75" height="25" alt="">
           </picture>
@@ -73,7 +73,7 @@
       <nav class="main-menu">
         <ul>
           <li class="main-menu__item">
-            <a href="index.html" class="main-menu__link">Главная</a>
+            <a href="index.html" class="main-menu__link main-menu__link--active">Главная</a>
           </li>
           <li class="main-menu__item">
             <a href="photo.html" class="main-menu__link">Фотографии</a>
@@ -240,7 +240,9 @@
           </div>
           <div class="feedback__item">
             <b>Пишите:</b>
-            <span class="feedback__text">mail@htmlacademy.ru</span>
+            <a href="#">
+              <span class="feedback__text feedback__text--mail">mail@htmlacademy.ru</span>
+            </a>
           </div>
           <div class="feedback__item feedback__item--last">
             <b>Приезжайте в гости:</b>

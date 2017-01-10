@@ -25,13 +25,12 @@
   &:not(checked) {
     position: absolute;
     opacity: 0;
+    
   }
   &:not(checked) + label {
     position: relative;
     padding: 0 0 0 25px;
-    &:firt-of-type{
-      
-    }
+    
   }
   &:not(checked) + label:before {
     content: "";

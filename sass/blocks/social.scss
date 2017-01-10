@@ -16,6 +16,12 @@
   &:first-of-type {
     margin-left: 0;
   }
+  &:hover {
+    border: 3px solid #283645;
+  }
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 

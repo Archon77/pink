@@ -71,12 +71,30 @@
   &--red {
     border-color: #d22856;
     color: #d22856;
+    &:hover{
+      background-color: #d22856;
+      color: #fff;
+      transition-duration: 0.5s;
+    }
+    &:active{
+      background-color: #d22856;
+      color: #fff;
+      opacity: 0.3;
+    }
   }
   &--grey {
     margin-top: 12px;
     border-color: #283645;
     color: #283645;
     opacity: 0.1;
+    &:hover {
+      opacity: 0.3;
+    }
+    &:active {
+      color: rgba(255,255,255,0.3);
+      background-color: #283645;
+      opacity: 0.3;
+    }
   }
 }
 

@@ -10,6 +10,13 @@
   font-weight: 700;
   color: #fff;
   box-shadow: inset  0px -1px 0 0px #000000, inset 0px 1px 0 0 rgba(255, 255, 255, 0.15);
+  &:hover {
+    color: #d22856;
+  }
+  &:active {
+    opacity: 0.3;
+  }
+  
 }
 
 @media (min-width: 1200px) {
@@ -33,6 +40,13 @@
     background-color: transparent;
     text-transform: initial;
     box-shadow: none;
+    padding-bottom: 20px;
+    &--active {
+      border-bottom: 2px solid #fff;
+      &:hover {
+        border-bottom: 2px solid #d22856;
+      }
+    }
   }
   .main-menu__item {
     padding: 47px 0;

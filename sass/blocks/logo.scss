@@ -2,6 +2,7 @@
   background-color: #283645;
   padding: 20px 20px 19px;
   position: relative;
+  
   &:after {
     content: "";
     width: 24px;
@@ -11,6 +12,16 @@
     top: 20px;
     right: 20px;
     cursor: pointer;
+  }
+  & svg {
+    fill: #ffffff;
+  }
+ 
+}
+
+.logo__img {
+  & svg {
+    fill: #ffffff;
   }
 }
 
@@ -29,6 +40,12 @@
     & img {
       width: 147px;
       height: 40px;  
+       &:hover {
+        fill: #d22856;  /*  !!!!!!   */
+      }
+      &:active {
+        opacity: 0.3;
+      }
     }
   } 
 }

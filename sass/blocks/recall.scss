@@ -26,6 +26,7 @@
 
 .recall__switch {
   @include switch();
+  
 }
 
 @media (min-width: 700px) {
