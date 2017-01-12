@@ -14,6 +14,20 @@
 .footer__logo {
   text-align: center;
   width: 146px;
+  
+}
+
+.footer__logo-img {
+  
+  &--1200 {
+    display: none;
+  }
+  &:hover {
+    fill: #d22856;
+  }
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .footer__logo-academy {
@@ -54,6 +68,16 @@
 @media (min-width: 1200px) {
   .page-footer {
     padding: 74px 131px 37px 130px;
+  }
+  .footer__logo-img {
+    
+    
+    &--320 {
+      display: none;
+    }
+    &--1200 {
+      display: block;
+    }
   }
   
 }

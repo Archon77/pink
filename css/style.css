@@ -351,8 +351,14 @@
   .logo svg {
     fill: #ffffff; }
 
-.logo__img svg {
+.logo__img {
   fill: #ffffff; }
+  .logo__img--700, .logo__img--1200 {
+    display: none; }
+  .logo__img:hover {
+    fill: #d22856; }
+  .logo__img:active {
+    opacity: 0.3; }
 
 .main-menu__link {
   display: block;
@@ -546,6 +552,15 @@
 .footer__logo {
   text-align: center;
   width: 146px; }
+
+.footer__logo-img--1200 {
+  display: none; }
+
+.footer__logo-img:hover {
+  fill: #d22856; }
+
+.footer__logo-img:active {
+  opacity: 0.3; }
 
 .footer__logo-academy {
   height: 40px;
@@ -1039,14 +1054,10 @@ td, th {
   .logo__img{
     width: 147px;
     height: 40px; }
-  .logo__img img{
-    width: 147px;
-    height: 40px; }
-  .logo__img img:hover{
-    fill: #d22856;
-    /*  !!!!!!   */ }
-  .logo__img img:active{
-    opacity: 0.3; }
+  .logo__img--320, .logo__img--1200{
+    display: none; }
+  .logo__img--700{
+    display: block; }
   .mobile-app{
     background-color: transparent;
     position: absolute;
@@ -1171,8 +1182,6 @@ td, th {
     width: 50px;
     height: 30px;
     margin: 5px 0 -5px; }
-  .price__hit svg{
-    margin-left: -2px; }
   .price__title{
     font-size: 16px;
     line-height: 30px; }
@@ -1360,6 +1369,10 @@ td, th {
     display: none; }
   .logo__img{
     fill: #fff; }
+  .logo__img--320, .logo__img--700{
+    display: none; }
+  .logo__img--1200{
+    display: block; }
   .main-menu{
     position: absolute;
     width: 1200px;
@@ -1422,6 +1435,10 @@ td, th {
     margin: 0 65px; }
   .page-footer{
     padding: 74px 131px 37px 130px; }
+  .footer__logo-img--320{
+    display: none; }
+  .footer__logo-img--1200{
+    display: block; }
   .price{
     padding: 140px 130px 50px; }
   .price__header{

@@ -19,10 +19,22 @@
  
 }
 
+
+
+
 .logo__img {
-  & svg {
-    fill: #ffffff;
+  fill: #ffffff;
+  &--700,
+  &--1200 {
+    display: none;
   }
+  &:hover {
+    fill: #d22856;
+  }
+  &:active {
+    opacity: 0.3;
+  }
+  
 }
 
 @media (min-width: 700px) {
@@ -37,15 +49,12 @@
   .logo__img {
     width: 147px;
     height: 40px;
-    & img {
-      width: 147px;
-      height: 40px;  
-       &:hover {
-        fill: #d22856;  /*  !!!!!!   */
-      }
-      &:active {
-        opacity: 0.3;
-      }
+    &--320,
+    &--1200 {
+      display: none;
+    }
+    &--700 {
+      display: block;
     }
   } 
 }
@@ -64,5 +73,12 @@
   }
   .logo__img {
     fill: #fff;
+    &--320,
+    &--700 {
+      display: none;
+    }
+    &--1200 {
+      display: block;
+    }
   }
 }
